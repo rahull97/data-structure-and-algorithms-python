@@ -1,0 +1,20 @@
+===
+
+What is an array and its properties?
+- They store data of a specific type
+- Elements of an array are stored in a contiguous memory locations
+- Each element of an array can be indentified uniquely based on its location
+- Size of an array is fixed and cannot be changed in runtime
+
+Why do we need an array?
+- To store large number of elements of a specific type, and perform computations on them
+
+Types of an Array?
+ - one dimensional 
+ - multi-dimensional
+
+ How arrays are stored in a memory?
+ - All elements of an array are stored in contiguous memory locations irrespective of its dimensions
+
+ ===
+ 
