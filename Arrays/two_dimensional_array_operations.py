@@ -76,3 +76,42 @@ for row_idx in range(len(two_d_array)):
         print(two_d_array[row_idx][col_idx], end="|")
     print()
 print("------------------------")
+
+
+# search for an element in 2d array
+def search_element(arr, key):
+    for row_idx in range(len(arr)):
+        for col_idx in range(len(arr[0])):
+            if arr[row_idx][col_idx] == key:
+                return (row_idx, col_idx)
+    return -1
+
+
+two_d_array = np.array(
+    [
+        [10, 20, 30],
+        [40, 50, 60],
+        [70, 80, 90]
+    ]
+)
+print(search_element(two_d_array, 30))
+print(search_element(two_d_array, 100))
+print("------------------------")
+
+# delete row or column from 2d array
+two_d_array = np.array(
+    [
+        [10, 20, 30],
+        [40, 50, 60],
+        [70, 80, 90]
+    ]
+)
+
+# delete row at index 1
+new_two_d_array = np.delete(two_d_array, 1, axis=0)
+print(new_two_d_array)
+
+# delete column at index 2
+new_two_d_array = np.delete(two_d_array, 2, axis=1)
+print(new_two_d_array)
+print("------------------------")
