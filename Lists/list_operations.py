@@ -16,3 +16,33 @@ for el in li:
     print(el)
 
 print("----------------------")
+
+# update element of a list
+li = [10, 20, 30]
+print(li)
+li[1] = 200
+print(li)
+print("----------------------")
+
+# insert element in a list
+li = [10, 20, 30]
+print(li)
+li.insert(0, 100)
+print(li)
+print("----------------------")
+
+
+# append element in a list
+li = [10, 20, 30]
+print(li)
+li.append(40)
+print(li)
+print("----------------------")
+
+# append another list
+li = [10, 20, 30]
+li1 = [40, 50, 60]
+print(li)
+li.extend(li1)
+print(li)
+print("----------------------")
